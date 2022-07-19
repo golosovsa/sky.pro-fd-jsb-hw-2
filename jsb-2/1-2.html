@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ru" class="html">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task1 - дракон</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        .html,
+        .body {
+            width: 100%;
+            height: 100%;
+        }
+
+        .body {
+            background-image: url(https://99px.ru/sstorage/56/2017/05/image_561605171554586379408.jpg);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: contain;
+            display: flex;
+            flex-flow: column nowrap;
+            align-items: center;
+            align-content: center;
+            justify-content: center;
+        }
+
+        .title {
+            font-size: 40px;
+            font-weight: 600;
+            animation: shock 0.3s linear 0s infinite alternate both;
+            margin-bottom: 100px;
+
+        }
+
+        @keyframes shock {
+            0% {transform: scale(0.75);}
+            100% {transform: scale(1);}
+        }
+    </style>
+</head>
+<body class="body">
+    <h1 class="title">О нет, тут дракон, бежим!</h1>
+
+    <script>
+        setTimeout(() => {history.back();}, 5000);
+    </script>
+</body>
+</html>
